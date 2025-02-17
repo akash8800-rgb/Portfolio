@@ -13,10 +13,8 @@
   <body class="bg-gradient-to-r from-cyan-500 to-yellow-500 text-white">
     <header class="text-center py-8">
       <div class="flex flex-col items-center">
-        <img
-          src="assets/akash.jpg"
-          class="w-32 h-32 rounded-full border-4 border-white shadow-lg"
-        />
+        <img src="./assets/akash.jpg" class="w-32 h-32 rounded-full border-4 border-white shadow-lg" />
+
 
         <h1 class="text-3xl font-bold mt-4">Akash</h1>
         <p class="text-lg">Web Developer | BCA Student | Gamer</p>
