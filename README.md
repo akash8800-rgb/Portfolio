@@ -9,13 +9,33 @@
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Akash's Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .animate-gradient-x {
+        animation: gradient 10s ease infinite;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
   </head>
-  <body class="bg-gradient-to-r from-cyan-500 to-yellow-500 text-white">
+  <body class="bg-gradient-to-r from-cyan-500 to-yellow-500 text-white animate-gradient-x">
     <header class="text-center py-8">
       <div class="flex flex-col items-center">
-        <img src="./assets/akash.jpg" class="w-32 h-32 rounded-full border-4 border-white shadow-lg" />
-
-
+        <img
+          src="./assets/akash.jpg"
+          class="w-32 h-32 rounded-full border-4 border-white shadow-lg transform hover:scale-110 transition-all duration-300"
+        />
         <h1 class="text-3xl font-bold mt-4">Akash</h1>
         <p class="text-lg">Web Developer | BCA Student | Gamer</p>
       </div>
@@ -24,40 +44,26 @@
     <nav class="bg-gray-900 py-4 sticky top-0 w-full shadow-lg">
       <ul class="flex flex-wrap justify-center space-x-4 md:space-x-8">
         <li>
-          <a href="#about" class="text-white hover:text-yellow-400 transition"
-            >About Me</a
-          >
+          <a href="#about" class="text-white hover:text-yellow-400 transition transform hover:scale-110">About Me</a>
         </li>
         <li>
-          <a
-            href="#education"
-            class="text-white hover:text-yellow-400 transition"
-            >Education</a
-          >
+          <a href="#education" class="text-white hover:text-yellow-400 transition transform hover:scale-110">Education</a>
         </li>
         <li>
-          <a
-            href="#projects"
-            class="text-white hover:text-yellow-400 transition"
-            >Projects</a
-          >
+          <a href="#projects" class="text-white hover:text-yellow-400 transition transform hover:scale-110">Projects</a>
         </li>
         <li>
-          <a href="#skills" class="text-white hover:text-yellow-400 transition"
-            >Skills</a
-          >
+          <a href="#skills" class="text-white hover:text-yellow-400 transition transform hover:scale-110">Skills</a>
         </li>
         <li>
-          <a href="#contact" class="text-white hover:text-yellow-400 transition"
-            >Contact</a
-          >
+          <a href="#contact" class="text-white hover:text-yellow-400 transition transform hover:scale-110">Contact</a>
         </li>
       </ul>
     </nav>
 
     <section
       id="about"
-      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-md"
+      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
     >
       <h2 class="text-2xl font-bold mb-2">About Me</h2>
       <p>
@@ -69,7 +75,7 @@
 
     <section
       id="education"
-      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-md"
+      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
     >
       <h2 class="text-2xl font-bold mb-2">Education</h2>
       <table class="w-full border-collapse border border-gray-300 text-center">
@@ -86,71 +92,7 @@
       </table>
     </section>
 
-    <section
-      id="projects"
-      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-md"
-    >
-      <h2 class="text-2xl font-bold mb-2">Projects</h2>
-      <ul class="list-disc pl-6">
-        <li>
-          <strong>Portfolio Website:</strong> Built using HTML, CSS, and
-          JavaScript.
-        </li>
-        <li>
-          <strong>Quiz Game:</strong> A web-based quiz game using JavaScript.
-        </li>
-        <li>
-          <strong>Calculator:</strong> A fully functional calculator using
-          JavaScript.
-        </li>
-        <li>
-          <strong>Calculator in C:</strong> A console-based arithmetic
-          calculator.
-        </li>
-      </ul>
-    </section>
-
-    <section
-      id="skills"
-      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-md"
-    >
-      <h2 class="text-2xl font-bold mb-2">Technical Skills</h2>
-      <div class="flex flex-wrap justify-center gap-4">
-        <span class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow"
-          >HTML</span
-        >
-        <span class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow"
-          >CSS</span
-        >
-        <span class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow"
-          >JavaScript</span
-        >
-        <span class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow"
-          >C</span
-        >
-      </div>
-    </section>
-
-    <section
-      id="contact"
-      class="max-w-4xl mx-auto bg-white text-gray-900 p-6 mt-6 rounded-lg shadow-md"
-    >
-      <h2 class="text-2xl font-bold mb-2">Contact Info</h2>
-      <p>
-        <strong>Email:</strong>
-        <a href="https://mail.google.com/mail/u/0/" class="text-blue-500"
-          >ajha03481@gmail.com</a
-        >
-      </p>
-      <p>
-        <strong>x:</strong>
-        <a href="https://x.com/" class="text-blue-500"
-          >https://x.com/Akash88code</a
-        >
-      </p>
-    </section>
-
-    <footer class="text-center py-4 mt-6 bg-gray-900 text-white">
+    <footer class="text-center py-4 mt-6 bg-gray-900 text-white shadow-lg">
       <p>&copy; 2025 Akash. All rights reserved.</p>
     </footer>
   </body>
